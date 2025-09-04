@@ -1,0 +1,43 @@
+.container-right {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    height: 100vh;
+}
+
+.title-right {
+    display: flex;
+    align-items: center;
+
+    gap: 0.75rem;
+
+    font-size: 1.75rem;
+}
+
+.title-right img {
+    width: 1.875rem;
+    height: 1.875rem;
+}
+
+.list-empty {
+    margin: 7rem 0 0 7.35rem;
+
+
+    display: flex;
+    flex-direction: column;
+
+    min-height: 20rem;
+    min-width: 32rem;
+    
+    align-items: center;
+
+    opacity: 30%;
+}
+
+.list-empty img {
+    width: 3.5rem;
+    height: 3.5rem;
+}

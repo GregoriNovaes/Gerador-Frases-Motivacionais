@@ -67,4 +67,35 @@
     background-color: #E43A12;
     border: 1px solid #E43A12;
     border-radius: 1rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-group button:hover {
+    background-color: #c5310f;
+}
+
+.button-group .refresh img:hover {
+    animation: reload 3.5s linear;
+}
+
+.button-group .heart img:hover {
+    width: 2.25rem;
+    height: 2.25rem;
+    transition: 0.3s ease;
+}
+
+.button-group img {
+    width: 2rem;
+    height: 2rem;
+}
+
+@keyframes reload {
+    from {
+        transform: rotate(0deg);
+    } to {
+        transform: rotate(360deg);
+    }
 }
