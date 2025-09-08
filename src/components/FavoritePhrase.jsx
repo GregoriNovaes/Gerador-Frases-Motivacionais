@@ -8,7 +8,7 @@ function FavoritePhrase({data, deletePhrase}) {
     return (
         <div className="favoritePhrase">
             <div className="label">
-                <img src="src/assets/circle.svg" alt="" />
+                <img src="public/icons/circle.svg" alt="" />
                 <p>{data.quote}</p>
             </div>
             <button className="delete" type="button" title="Apagar" onClick={remove}></button>

@@ -35,7 +35,7 @@ function ContainerLeft({ addPhrase }) {
         <div>
             <div className="container">
                 <div className="title">
-                    <img src="src/assets/star-one.svg" alt="um grupo de 3 estrelinha e 1 estrela" />
+                    <img src="public/icons/star-one.svg" alt="um grupo de 3 estrelinha e 1 estrela" />
                     <h2>Frase <span>Motivacional</span></h2>
                 </div>
 
@@ -46,8 +46,8 @@ function ContainerLeft({ addPhrase }) {
                 </div>
 
                 <div className="button-group">
-                    <button className="refresh" type="button" onClick={phraseMotivation} title="Gerar nova frase"><img src="src/assets/refresh.svg" alt="" /></button>
-                    <button className="heart" type="button" onClick={favoritedPhrase} title="Favoritar a frase"><img src="src/assets/heart.svg" alt="" /></button>
+                    <button className="refresh" type="button" onClick={phraseMotivation} title="Gerar nova frase"><img src="public/icons/refresh.svg" alt="" /></button>
+                    <button className="heart" type="button" onClick={favoritedPhrase} title="Favoritar a frase"><img src="public/icons/heart.svg" alt="" /></button>
                 </div>
             </div>
         </div>
