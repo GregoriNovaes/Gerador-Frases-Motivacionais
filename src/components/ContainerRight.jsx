@@ -7,7 +7,7 @@ function ContainerRight({data, remove}) {
         <div>
             <div className="container-right">
                 <div className="title-right">
-                    <img src="public/icons/star-two.svg" alt="Uma estrela" />
+                    <img src="/icons/star-two.svg" alt="Uma estrela" />
                     <h3>Frases Favoritas</h3>
                 </div>
 
@@ -15,7 +15,7 @@ function ContainerRight({data, remove}) {
                     {
                         data.length == 0 ? (
                             <div className="list-empty">
-                                <img src="public/icons/clipboard.svg" alt="Uma prancheta" />
+                                <img src="/icons/clipboard.svg" alt="Uma prancheta" />
                                 <p>Você ainda não tem frases favoritadas.</p>
                             </div>
                         ) : (

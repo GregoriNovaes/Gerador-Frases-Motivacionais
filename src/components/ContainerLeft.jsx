@@ -46,8 +46,8 @@ function ContainerLeft({ addPhrase }) {
                 </div>
 
                 <div className="button-group">
-                    <button className="refresh" type="button" onClick={phraseMotivation} title="Gerar nova frase"><img src="public/icons/refresh.svg" alt="" /></button>
-                    <button className="heart" type="button" onClick={favoritedPhrase} title="Favoritar a frase"><img src="public/icons/heart.svg" alt="" /></button>
+                    <button className="refresh" type="button" onClick={phraseMotivation} title="Gerar nova frase"><img src="/icons/refresh.svg" alt="" /></button>
+                    <button className="heart" type="button" onClick={favoritedPhrase} title="Favoritar a frase"><img src="/icons/heart.svg" alt="" /></button>
                 </div>
             </div>
         </div>

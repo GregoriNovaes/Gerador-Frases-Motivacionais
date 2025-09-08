@@ -35,7 +35,7 @@
 }
 
 .favoritePhrase .delete {
-    background-image: url("public/icons/delete-gray.svg");
+    background-image: url("/icons/delete-gray.svg");
     background-color: transparent;
     background-position: center;
 
@@ -47,5 +47,5 @@
 }
 
 .favoritePhrase .delete:hover {
-    background-image: url("public/icons/delete-red.svg");
+    background-image: url("/icons/delete-red.svg");
 }
