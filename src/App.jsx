@@ -1,9 +1,16 @@
 import  ContainerLeft  from "./components/ContainerLeft.jsx"
 import ContainerRight from "./components/ContainerRight.jsx"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 
 function App() {
-  const [data, setData] = useState([])
+  const [data, setData] = useState(() => {
+    const savedPhrases = localStorage.getItem("listPhrases")
+    return savedPhrases ? JSON.parse(savedPhrases) : []
+  })
+
+  useEffect(() => {
+    localStorage.setItem("listPhrases", JSON.stringify(data))
+  }, [data])
 
   function addNewPhrase(newPhrase) {
 
