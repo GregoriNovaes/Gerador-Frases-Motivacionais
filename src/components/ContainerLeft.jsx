@@ -1,8 +1,17 @@
 import { useEffect, useState } from "react"
 import "../css/ContainerLeft.css"
 
-function ContainerLeft() {
-    const [phrase, setPhrase] = useState("")
+function ContainerLeft({ addPhrase }) {
+    const [phrase, setPhrase] = useState([])
+
+    function favoritedPhrase() {
+        const phraseFavorited = {
+            id: phrase.id,
+            quote: phrase.quote
+        }
+
+        addPhrase(phraseFavorited)
+    }
 
     const phraseMotivation = async () => {
         try {
@@ -12,7 +21,7 @@ function ContainerLeft() {
             data.slice(0, 100)
             const numberRandom = Math.floor(Math.random() * data.length)
 
-            setPhrase(data[numberRandom].quote)
+            setPhrase(data[numberRandom])
         } catch (error) {
             setPhrase("Ops.. erro ao gerar uma nova frase.")
         }
@@ -32,13 +41,13 @@ function ContainerLeft() {
 
                 <div className="phrase-motivation">
                     <p>
-                        {phrase}
+                        {phrase.quote}
                     </p>
                 </div>
 
                 <div className="button-group">
                     <button className="refresh" type="button" onClick={phraseMotivation} title="Gerar nova frase"><img src="src/assets/refresh.svg" alt="" /></button>
-                    <button className="heart" type="button" title="Favoritar a frase"><img src="src/assets/heart.svg" alt="" /></button>
+                    <button className="heart" type="button" onClick={favoritedPhrase} title="Favoritar a frase"><img src="src/assets/heart.svg" alt="" /></button>
                 </div>
             </div>
         </div>
